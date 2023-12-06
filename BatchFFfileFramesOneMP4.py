@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """ Generate an High Quality MP4 movie from two FF files ore more.
-    Based on code from contributors: Tioga Gulon
+    Based on code from contributor: Tioga Gulon
     Modified by: Kees Habraken
 """
 
@@ -87,7 +87,7 @@ def generateMP4s(folder_path):
             img=cv2.imread(os.path.join(dir_tmp_path, img_file_name))
 
             # Draw text to image
-            text = camid + " " + timestamp.strftime("%Y-%m-%d %H:%M:%S") + " UTC"
+            text = camid + " " + timestamp.strftime("%Y-%m-%d %H:%M:%S.%f") + " UTC"
             cv2.putText(img, text, (10, ff.nrows - 6), font, 0.4, (255, 255, 255), 1, cv2.LINE_AA)
 
             # Save the labelled image to disk
