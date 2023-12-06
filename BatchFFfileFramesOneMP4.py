@@ -39,6 +39,8 @@ def generateMP4s(folder_path):
         font = ImageFont.load_default()
     
     print("Preparing files for the timelapse...")
+
+    mp4_paths = []
     
     # assign directory
     for filename in os.scandir(folder_path):
@@ -95,6 +97,7 @@ def generateMP4s(folder_path):
     
         ffbasename = os.path.splitext(ff_name)[0]
         mp4_path = ffbasename + ".mp4"
+        mp4_paths.append(mp4_path)
         temp_img_path = os.path.join(dir_tmp_path, ffbasename+"_%03d.jpg")
 
         # If running on Windows, use ffmpeg.exe
@@ -139,6 +142,14 @@ def generateMP4s(folder_path):
 
     print("Total time:", datetime.datetime.utcnow() - t1)
 
+    with open(os.path.join(dir_path, "mp4_paths.txt"), "w") as mp4_paths_file:
+        for mp4_path in mp4_paths:
+            print("file " + mp4_path, file=mp4_paths_file)
+
+    concat_command = software_name + " -f concat -safe 0 -i mp4_paths.txt -c copy output.mp4"
+    subprocess.call(concat_command, shell=True, cwd=dir_path)
+
+    os.remove(os.path.join(dir_path, "mp4_paths.txt"))
 
         ##############################################################
         
