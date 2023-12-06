@@ -146,7 +146,7 @@ def generateMP4s(folder_path):
         for mp4_path in mp4_paths:
             print("file " + mp4_path, file=mp4_paths_file)
 
-    concat_command = software_name + " -f concat -safe 0 -i mp4_paths.txt -c copy output.mp4"
+    concat_command = software_name + " -f concat -safe 0 -i mp4_paths.txt -c copy Merged_event_FFfileFrames.mp4"
     subprocess.call(concat_command, shell=True, cwd=dir_path)
 
     os.remove(os.path.join(dir_path, "mp4_paths.txt"))
