@@ -1,7 +1,7 @@
 # BatchFFfileFramesOneMP4
 RMS Utils tool to concatenated two or more FFfile into one MP4.
 
-Each FFfile in a directory will be coverted into 256 frames.
+Each FFfile in a directory will be coverted into a set of 256 frames.
 
 Each set of frames will be converted into a mp4.
 
