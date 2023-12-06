@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """ Generate an High Quality MP4 movie from two FF files ore more.
-    Based on code from contributor: Tioga Gulon
+    Based on code from contributor: Tioga Gulon and Tammo Jan Dijkema
     Modified by: Kees Habraken
 """
 
