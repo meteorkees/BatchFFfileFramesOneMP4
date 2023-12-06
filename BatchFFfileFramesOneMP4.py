@@ -148,7 +148,7 @@ if __name__ == "__main__":
     # COMMAND LINE ARGUMENTS
 
     # Init the command line arguments parser
-    arg_parser = argparse.ArgumentParser(description="Convert all FF files in a folder to one MP4s")
+    arg_parser = argparse.ArgumentParser(description="Convert all FF files in a folder to one mp4")
 
     arg_parser.add_argument('folder_path', metavar='FOLDER_PATH', type=str,
         help='Path to directory with FF files.')
