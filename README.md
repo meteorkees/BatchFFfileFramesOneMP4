@@ -18,7 +18,7 @@ If the script BatchFFfileFramesOneMP4.py is not there, copy-paste it into this U
 Next; Copy-paste the desired FFfiles into a folder somewhere on your system and remember the location. 
 Now you are ready to run the script by:
 
-1. make sure vRMS is activate:
+1. make sure vRMS is activated:
 ````
 source vRMS/bin/activate
 ````
@@ -31,4 +31,9 @@ cd ~/source/RMS
 
 ````
 python -m Utils.BatchFFfileFramesOneMP4 -h
+````
+4. You will see some explanation about how to use the script. In this case you only need to add the folder path of the folder containing the 'event-FFfiles': Like:
+
+````
+python -m Utils.BatchFFfileFramesOneMP4 /path/to/your/folder/with/event_FFfiles
 ````
