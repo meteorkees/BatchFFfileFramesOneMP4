@@ -37,4 +37,4 @@ python -m Utils.BatchFFfileFramesOneMP4 -h
 ````
 python -m Utils.BatchFFfileFramesOneMP4 /path/to/your/folder/with/event_FFfiles
 ````
-When the script is done you will find in your 'event-FFfiles' folder a .mp4 of each FFfile and the Merged_event_FFfile.mp4 file. You could rename this file to suit your needs.
+When the script is done you will find in your 'event-FFfiles' folder a .mp4 of each FFfile and the `Merged_event_FFfileFrames.mp4` file. You could rename this file to suit your needs.
