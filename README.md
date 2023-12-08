@@ -7,3 +7,28 @@ Each FFfile in a directory will be coverted into a set of 256 frames-->
 Each set of frames will be converted into a mp4-->
 
 All mp4's will be concatenated into one mp4.
+
+## Usage:
+RMS should be installed on your system to run this script. See: https://github.com/CroatianMeteorNetwork/RMS
+
+When RMS is installed on your system, check the directory `~/source/RMS/Utils`. 
+
+If the script BatchFFfileFramesOneMP4.py is not there, copy-paste it into this Utils directory.
+
+Next; Copy-paste the desired FFfiles into a folder somewhere on your system and remember the location. 
+Now you are ready to run the script by:
+
+1. make sure vRMS is activate:
+````
+source vRMS/bin/activate
+````
+2. change into the RMS directory:
+
+````
+cd ~/source/RMS
+````
+3. Run the BatchFFfileFRamesOneMP4 and show the available options with:
+
+````
+python -m Utils.BatchFFfileFramesOneMP4 -h
+````
