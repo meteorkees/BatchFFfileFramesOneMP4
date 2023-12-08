@@ -8,6 +8,12 @@ Each set of frames will be converted into a .mp4 video-->
 
 All mp4's will be concatenated (merged) into one .mp4 video.
 
+#### Note:
+When RMS is running via Anaconda on Windows make sure ffmpeg is installed. If not, install with:
+````
+conda install -c conda-forge ffmpeg
+````
+
 ## Usage:
 RMS should be installed on your system to run this script. See: https://github.com/CroatianMeteorNetwork/RMS
 
