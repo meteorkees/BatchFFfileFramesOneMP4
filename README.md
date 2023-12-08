@@ -4,9 +4,9 @@ This tool can be used in the RMS enviroment in the case a meteor of fireball eve
 
 Each FFfile in a directory will be coverted into a set of 256 frames-->
 
-Each set of frames will be converted into a mp4-->
+Each set of frames will be converted into a .mp4 video-->
 
-All mp4's will be concatenated into one mp4.
+All mp4's will be concatenated (merged) into one .mp4 video.
 
 ## Usage:
 RMS should be installed on your system to run this script. See: https://github.com/CroatianMeteorNetwork/RMS
