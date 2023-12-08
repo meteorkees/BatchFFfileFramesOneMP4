@@ -8,7 +8,9 @@ Each set of frames will be converted into a .mp4 video-->
 
 All mp4's will be concatenated (merged) into one .mp4 video.
 
-#### Note:
+#### Notes:
+This script is running best when `only` FFfiles which should be merged into one .mp4 are stored in a seperate folder!
+
 When RMS is running via Anaconda on Windows make sure ffmpeg is installed. If not, install with:
 ````
 conda install -c conda-forge ffmpeg
