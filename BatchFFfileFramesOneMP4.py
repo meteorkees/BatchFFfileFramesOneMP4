@@ -141,7 +141,10 @@ def generateMP4s(folder_path):
             print("Deleted temporary directory : " + dir_tmp_path)
 
     print("Total time:", datetime.datetime.utcnow() - t1)
+
+    software_name = "ffmpeg"
     mp4_paths = sorted(mp4_paths)
+    
     with open(os.path.join(dir_path, "mp4_paths.txt"), "w") as mp4_paths_file:
         for mp4_path in mp4_paths:
             print("file " + mp4_path, file=mp4_paths_file)
