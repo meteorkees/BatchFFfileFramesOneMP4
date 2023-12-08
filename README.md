@@ -27,7 +27,7 @@ source vRMS/bin/activate
 ````
 cd ~/source/RMS
 ````
-3. Run the BatchFFfileFRamesOneMP4 and show the available options with:
+3. Run the script BatchFFfileFRamesOneMP4 and show the available options with: (note: do not add .py at the end of the script-name!)
 
 ````
 python -m Utils.BatchFFfileFramesOneMP4 -h
